@@ -1,33 +1,50 @@
+// Function to scroll smoothly to a section
+function scrollToSection(section) {
+  window.scrollTo({
+    behavior: "smooth",
+    top: section.offsetTop,
+  });
+}
+
+// Function to add click event listener to a link
+function addSmoothScrolling(link, section) {
+  link.addEventListener("click", function (event) {
+    event.preventDefault();
+    scrollToSection(section);
+  });
+}
+
 // Get references to the navigation links
-const aboutUsLink = document.querySelector(".top-nav-links li:nth-child(1) a");
-const featuresLink = document.querySelector(".top-nav-links li:nth-child(2) a");
-const contactLink = document.querySelector(".top-nav-links li:nth-child(3) a");
+const topAboutUsLink = document.querySelector(
+  ".top-nav-links li:nth-child(1) a"
+);
+const topFeaturesLink = document.querySelector(
+  ".top-nav-links li:nth-child(2) a"
+);
+const topContactLink = document.querySelector(
+  ".top-nav-links li:nth-child(3) a"
+);
+
+// Get references to the bottom navigation links
+const bottomAboutUsLink = document.querySelector(
+  ".contact-section_nav-links li:nth-child(1) a"
+);
+const bottomFeaturesLink = document.querySelector(
+  ".contact-section_nav-links li:nth-child(2) a"
+);
+const bottomContactLink = document.querySelector(
+  ".contact-section_nav-links li:nth-child(3) a"
+);
 
 // Get references to the target sections
 const aboutUsSection = document.getElementById("about-us");
 const featuresSection = document.getElementById("features");
 const contactSection = document.getElementById("contact");
 
-// Function to scroll smoothly to a section
-function scrollToSection(section) {
-	window.scrollTo({
-		behavior: "smooth",
-		top: section.offsetTop,
-	});
-}
-
-// Add click event listeners to the navigation links
-aboutUsLink.addEventListener("click", function (event) {
-	event.preventDefault();
-	scrollToSection(aboutUsSection);
-});
-
-featuresLink.addEventListener("click", function (event) {
-	event.preventDefault();
-	scrollToSection(featuresSection);
-});
-
-contactLink.addEventListener("click", function (event) {
-	event.preventDefault();
-	scrollToSection(contactSection);
-});
+// Add click event listeners for both top and bottom navigation links
+addSmoothScrolling(topAboutUsLink, aboutUsSection);
+addSmoothScrolling(topFeaturesLink, featuresSection);
+addSmoothScrolling(topContactLink, contactSection);
+addSmoothScrolling(bottomAboutUsLink, aboutUsSection);
+addSmoothScrolling(bottomFeaturesLink, featuresSection);
+addSmoothScrolling(bottomContactLink, contactSection);
