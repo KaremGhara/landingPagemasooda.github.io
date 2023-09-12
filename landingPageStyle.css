@@ -149,6 +149,7 @@ button {
   width: 30%;
   height: 60px;
   font-family: "GeneralSans-Medium";
+  margin-left: 25px;
 }
 
 .waitlist-link_button a {
@@ -160,11 +161,13 @@ button {
 .top-header {
   font-size: 48px;
   font-family: "GeneralSans-Bold";
+  margin-left: 25px;
 }
 
 .top-header_description {
   font-size: 24px;
   font-family: "GeneralSans-Regular";
+  margin-left: 25px;
 }
 
 .features-header {
@@ -177,6 +180,7 @@ button {
 .features-description-block {
   display: flex;
   flex-wrap: wrap;
+  margin-left: 25px;
 }
 
 .features-description-block h3 {
@@ -191,8 +195,11 @@ button {
   font-family: "GeneralSans-Regular";
 }
 
-.features-description-block_feature {
+.features-description-block_feature{
   flex: 1 1 300px;
+}
+.features-description-block_feature h3{
+  font-size: 24px;
 }
 
 .contact-section {
@@ -286,6 +293,7 @@ hr {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 50% 100%;
+ 
 }
 
 .join-section div {
