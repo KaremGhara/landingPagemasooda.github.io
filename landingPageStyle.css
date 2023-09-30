@@ -485,7 +485,7 @@ margin-right: 20px;
     }
     .top-section{
       text-align: center;
-      height: 1000px;
+      height: 1100px;
     }
     .mobile-image {
       z-index: 1;
@@ -510,6 +510,16 @@ margin-right: 20px;
     align-self: center;
     margin-top: 100px;
   }
+  .contact-section_nav-links{
+    width: 100%;
+  }
+  .meet_the_team{
+    width: 500px !important;
+  }
+  .about-us-section_description span{
+    margin-left: 100px;
+  }
+
 }
 
 .mobile-image {
