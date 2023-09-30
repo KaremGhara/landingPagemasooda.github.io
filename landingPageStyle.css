@@ -479,12 +479,12 @@ margin-right: 20px;
   .features-header,
   #about-us
   {
-    justify-content: center;
-    align-self: center;
-    align-content: center;
-    margin: 0 auto; /* This centers the element horizontally */
+    justify-content: center !important;
+    align-self: center !important;
+    align-content: center !important;
+    margin: 0 auto !important; /* This centers the element horizontally */
     font-size:100px !important;
-    text-align: center;
+    text-align: center !important;
   }
   #intro {
       /* your custom styles for intro div */
@@ -631,9 +631,9 @@ margin-right: 20px;
 
   }
   .brand img{
-    margin-left: 35px;
+    margin-left: 24px;
     text-align: center;
-    width: 120px;
+    width: 177px;
   }
   /* .top-nav .waitlist-link{
     display: none;
@@ -670,8 +670,9 @@ margin-right: 20px;
     }
   
     .top-section p {
-      font-size: 16px; /* Adjust the font size as needed */
-      font-weight: normal; /* Remove bold weight if not needed */
+      margin-left: 60px !important;
+      text-align: center !important;
+      font-size: 19px !important; /* Adjust the font size as needed */
     }
     .mobile-image {
       max-width: 200%; /* Adjust the max-width to fit the container */
@@ -689,10 +690,12 @@ margin-right: 20px;
     }
   
   .features-header {
-    text-align: center;
-    margin: 0 auto; /* This centers the element horizontally */
-    max-width: 100%; /* Ensures the text does not exceed the screen width */
-    padding: 0 20px; /* Add some padding to prevent stretching on smaller screens */
+    margin-left: 30px !important;
+    font-size: 30px !important;
+    text-align: center !important;
+    margin: 0 auto !important; /* This centers the element horizontally */
+    max-width: 100% !important; /* Ensures the text does not exceed the screen width */
+    padding: 0 50px !important; /* Add some padding to prevent stretching on smaller screens */
   }
   .contact-section_nav-links{
     display: none;
