@@ -128,7 +128,7 @@ button {
 }
 
 .main-container {
-  margin-top: 100px;
+  margin-top: 20px;
 }
 
 .top-section {
@@ -140,7 +140,9 @@ button {
   color: #fff;
   height: 700px;
 }
-
+#about-us-right{
+  padding-right: 50px
+}
 .features-section {
   margin-top: 100px;
 }
@@ -154,6 +156,9 @@ button {
   font-family: "GeneralSans-Medium";
   margin-left: 25px;
   border-radius:10px;
+}
+#about-us-div{
+  padding-left: 50px
 }
 
 .waitlist-link_button a {
@@ -226,6 +231,14 @@ button {
   text-align: center;
   font-size: 32px;
   
+}
+
+
+
+
+.contact-email_button {
+  font-size: 18px; /* Adjust button font size */
+  margin-top: 20px; /* Add spacing below the paragraph */
 }
 
 .contact-email_button {
@@ -369,11 +382,9 @@ margin-right: 20px;
  
 }
 
-/* Mobile styles */
-@media only screen and  (min-width: 300px) and (max-width: 768px) {
-  .top-nav {
-    display: none;
-  }
+
+/* @media only screen and  (min-width: 300px) and (max-width: 768px) {
+  
   .meet_the_team
   {
     width: 50%;
@@ -411,10 +422,10 @@ margin-right: 20px;
     height: 100%;
     font-size: 9px;
   }
-}
+} */
 
 
-@media only screen and (min-width: 600px) and (max-width: 768px) {
+/* @media only screen and (min-width: 600px) and (max-width: 768px) {
   .top-nav,
   .main-container,
    #features,
@@ -429,12 +440,52 @@ margin-right: 20px;
   }
 }
 .mobile-image {
-  max-width: 100%; /* Ensures image doesn't overflow the container */
-  height: auto; /* Maintains the aspect ratio */
+  max-width: 100%; 
+  height: auto; 
+} */
+
+.top-header_description {
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 
-@media only screen and (min-width: 435px) and (max-width: 1310px) {
+
+@media only screen and (min-width: 430px) and (max-width: 1310px) {
+
+  .meet_the_team{
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+  margin-left: -5px !important;
+  width: 500px !important;
+  }
+  #about-us-right p {
+    padding-left: 50px;
+  }
+  #about-us-div h1{
+    margin-left: 50px;
+  }
+
+  #about-us-div h1 p{
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+  }
+
+  .features-header,
+  #about-us
+  {
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    margin: 0 auto; /* This centers the element horizontally */
+    font-size:100px !important;
+    text-align: center;
+  }
   #intro {
       /* your custom styles for intro div */
       padding: 10px;
@@ -464,9 +515,116 @@ margin-right: 20px;
 }
 
 @media only screen and (min-width: 335px) and (max-width:1000px) {
-  .top-nav {
-    display: none;
+  .about-us-section {
+    flex-direction: column;
+    padding: 0 20px;
+    text-align: center;
   }
+
+  .about-us-section_title {
+    font-size: 24px;
+    margin-top: 20px; /* Adjust margin to vertically center the title */
+  }
+
+  .about-us-section_description {
+    font-size: 16px;
+    margin-bottom: 20px; /* Adjust margin to vertically center the paragraphs */
+  }
+
+  .meet-the-team-section {
+    margin: 20px;
+  }
+
+  .meet_the_team {
+    font-size: 16px; /* Adjust button font size for smaller screens */
+  }
+  .top-header_description {
+    font-size: 18px;
+    width: 80%;
+    margin: 0 auto;
+}
+  .menu-toggle {
+    margin-left: 387px;
+    cursor: pointer;
+  }
+  
+  .menu-toggle span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .top-nav.active .menu-toggle span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .top-nav.active .menu-toggle span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .top-nav.active .menu-toggle span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  .top-nav-links li,
+.dropdown-content li {
+  text-align: center; /* Center-align the list items */
+}
+.top-nav-links a,
+.dropdown-content a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  text-align: center; /* Center-align the anchor tags */
+  margin: 0 auto; /* Center the text horizontally */
+}
+  
+.top-nav-links {
+  display: flex;
+  flex-direction: column;
+  background-color: white; /* Set the background color to white or any desired color */
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: 0.4s;
+  z-index: -1;
+}
+.language-dropdown {
+  text-align: center; /* Center-align the language dropdown */
+}
+
+.language-dropdown .dropdown-content {
+  background-color: white; /* Set the background color to white or any desired color */
+  position: static; /* Remove absolute positioning */
+  width: auto; /* Allow content to expand horizontally */
+  margin: 0 auto; /* Center the content horizontally */
+}
+
+  
+  .top-nav.active .top-nav-links {
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  .top-nav-links li {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .top-nav-links a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* .top-nav {
+    display: none;
+  } */
   .top-nav-links{
     text-align: center;
     font-size: 20px;
@@ -476,28 +634,38 @@ margin-right: 20px;
     text-align: center;
     width: 120px;
   }
-  .top-nav .waitlist-link{
+  /* .top-nav .waitlist-link{
     display: none;
-  }
+  } */
     .image-content {
       z-index: 1;
         order: -1; /* This will make the image go above the text on small screens */
     }
     .top-section {
+      justify-content: center;
+      align-items: center;
+      align-self: center;
       text-align: center;
       height: auto; /* Adjust the height as needed */
-      width: 100%; /* Adjust the width as needed */
+      width: 130%; /* Adjust the width as needed */
       padding: 20px; /* Add some padding to center content */
       box-sizing: border-box; /* Include padding in width/height calculation */
+    }
+    .top-section button{
+      justify-content: center;
+      align-items: center;
+      margin: 10px;
+
     }
   
     .top-section .col-6 {
       text-align: center;
-      width: 100%; /* Full width for the columns */
+      width: 200%; /* Full width for the columns */
+      margin-right: 10px;
     }
  
     .top-section h1 {
-      font-size: 30px; /* Adjust the font size as needed */
+      font-size: 28px; /* Adjust the font size as needed */
     }
   
     .top-section p {
@@ -505,10 +673,11 @@ margin-right: 20px;
       font-weight: normal; /* Remove bold weight if not needed */
     }
     .mobile-image {
-      max-width: 100%; /* Adjust the max-width to fit the container */
+      max-width: 200%; /* Adjust the max-width to fit the container */
       width: auto; /* Let the image scale proportionally */
       margin-left: 0; /* Remove left margin */
       margin-top: 20px; /* Adjust top margin as needed */
+      text-align: center;
     }
     section.center-button {
       display: flex;
@@ -531,6 +700,7 @@ margin-right: 20px;
     text-align: center;
   }
   .join-section{
+    width: 130%;
     text-align: center;
     font-size: 13px;
   }
@@ -564,4 +734,89 @@ margin-right: 20px;
 .features-description-block_feature{
   text-align: left;
 }
+
+.contact-section_nav {
+  flex-direction: column; /* Stack items vertically */
 }
+
+.contact-section_nav_content {
+  text-align: center; /* Center-align content */
+}
+
+.contact-section_nav_links {
+  text-align: center; /* Center-align links */
+}
+
+.contact-section_nav_icons {
+  display: flex;
+  flex-direction: column; /* Stack icons and copyright vertically */
+  align-items: center; /* Center-align items horizontally */
+  margin-top: 10px; /* Add some top margin for spacing */
+}
+
+.contact-section_nav_icons a {
+  margin: 10px; /* Add spacing between items */
+}
+.contact-section {
+  padding: 10px;
+}
+
+h1 {
+  font-size: 30px !important;
+}
+
+p {
+  text-align: center;
+  margin-right: 20px;
+  font-size: 14px !important;
+  margin: 30px !important;
+}
+
+.contact-email_button {
+  width: 400px;
+  margin-right: 120px;
+  text-align: center;
+  font-size: 14px;
+}
+}
+@media only screen and (min-width: 1026px) {
+  .top-nav_links-text {
+    font-family: "GeneralSans-SemiBold" ;
+    font-size: 17px;
+    margin-left: 20px;
+  }
+  .top-header_description {
+    width: 100%;
+    font-size: 17px;
+    line-height: 1.5;
+}
+  .top-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .top-nav-links {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    position: relative;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    z-index: 1;
+  }
+
+  .top-nav-links li {
+    padding: 0 15px;
+  }
+}
+
+
+
+
+
+

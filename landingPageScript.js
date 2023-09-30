@@ -35,7 +35,12 @@ const bottomFeaturesLink = document.querySelector(
 const bottomContactLink = document.querySelector(
   ".contact-section_nav-links li:nth-child(3) a"
 );
+const menuToggle = document.querySelector(".menu-toggle");
+const topNav = document.querySelector(".top-nav");
 
+menuToggle.addEventListener("click", function () {
+  topNav.classList.toggle("active");
+});
 // Get references to the target sections
 const aboutUsSection = document.getElementById("about-us");
 const featuresSection = document.getElementById("features");

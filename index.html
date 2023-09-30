@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Masooda</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -18,29 +19,26 @@
 
   </head>
   <body>
-    <nav class="top-nav container-fluid">
-      <div class="top-nav row-left-section">
-        <div class="brand top-nav-left-section col-sm-6"><img src="assets/images//masoodalogored 1.png" width="250px" alt=""></div>
-        <ul class="top-nav-links top-nav-right-section col-sm-6">
-          <li><a href="#" class="top-nav_links-text">About Us</a></li>
-          <li><a href="#" class="top-nav_links-text">Features</a></li>
-          <li><a href="#" class="top-nav_links-text">Contact</a></li>
-        </ul>
+    <nav class="top-nav">
+      <div class="brand"><img src="assets/images/masoodalogored 1.png" width="250px" alt=""></div>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-      <div class="top-nav-right-section">
-        <div class="language-dropdown">
-          <!-- <div class="globe-icon">&#127760;</div>
-          <div class="dropdown-content">
-            <a href="#" class="top-nav_links-text">EN</a>
-            <a href="#" class="top-nav_links-text">עבר</a>
-          </div>
-        </div> -->
-        <a href="https://forms.gle/Q9bLVLr3GfDAHjAs6" class="waitlist-link"
-          >Join the waitlist</a
-        >
-      </div>
+      <ul class="top-nav-links">
+        <li><a href="#" class="top-nav_links-text">About Us</a></li>
+        <li><a href="#" class="top-nav_links-text">Features</a></li>
+        <li><a href="#" class="top-nav_links-text">Contact</a></li>
+        <li class="language-dropdown">
+          <a href="#" class="top-nav_links-text">Language &#9660;</a>
+          <ul class="dropdown-content">
+            <li><a href="#" class="top-nav_links-text">EN</a></li>
+            <li><a href="#" class="top-nav_links-text">עבר</a></li>
+          </ul>
+        </li>
+      </ul>
     </nav>
-
     <main class="main-container container-fluid">
       <section class="top-section row flex-row flex-wrap align-items-center">
         <div class="col-6" id="intro">
@@ -49,7 +47,7 @@
               At Masooda, we're on a mission to transform the restaurant industry <br />
               Our tailored ERP software system is designed to be your restaurant's <br />
               ultimate partner for success and sustainability.<br />
-              <br />
+    
               Masooda, you gain real-time visibility into inventory levels,<br /> optimize food ordering like never before, and simplify meal planning<br /> with ease.
             </p>
             <button class="waitlist-link_button">
@@ -68,22 +66,23 @@
 
       <section class="features-section row" id="features">
         <div style="width: 100%;height: auto;">
-             <h1 class="features-header">
-          We're not just a solution;<br/>  we're your ally in reducing food waste,<br/> 
-          enhancing operational efficiency,<br/>  and creating a dining experience<br/> 
-          that's both <span style="color: #B21313;">profitable</span> and <span style="color: #B21313;">planet-friendly</span>.
-        </h1>
+          <h1 class="features-header" style="margin-bottom: 50px;">
+            We're not just a solution;<br/>  we're your ally in reducing food waste,<br/> 
+            enhancing operational efficiency,<br/>  and creating a dining experience<br/> 
+            that's both <span style="color: #B21313;">profitable</span> and <span style="color: #B21313;">planet-friendly</span>.
+          </h1>
         </div>
      
         
         <div class="features-description-block row">
+          
           <div class="features-description-block_feature col-12 col-md-6 col-lg-3">
             <img src="./assets/landingpage-icons/inventory-icon.png" alt="inventory-icon" />
             <h3>Inventory Management</h3>
             <p>
-              Masooda provides tools to easily track and manage
-              restaurant's food inventory with real-time updates, helping
-              to reduce waste and maximize profitability.
+              Masooda provides tools<br/> to easily track and manage<br/>
+              restaurant's food inventory<br/> with real-time updates,<br/>helping
+              to reduce waste and<br/> maximize profitability.<br/>
             </p>
           </div>
           <div class="features-description-block_feature col-12 col-md-6 col-lg-3">
@@ -149,7 +148,7 @@
       </section>
 
       <section class="about-us-section" id="about-us">
-        <div id="about-us-div" style="padding-left: 50px">
+        <div id="about-us-div">
           <h1 class="about-us-section_title">Meet Masooda</h1>
           <p class="about-us-section_description">
             <span style="color: #c30001">Our mission</span> is to make food
@@ -159,7 +158,7 @@
           </p>
         </div>
 
-        <div style="padding-right: 50px">
+        <div id="about-us-right">
           <p class="about-us-section_description">
             At Masooda, we're on a mission to revolutionize the restaurant industry. Our
             <br />
@@ -179,24 +178,16 @@
         </div>
       </section>
 
-      <section style="justify-content: center;align-items: center;margin: 40px;align-self: center;text-align: center;">
+      <section style="justify-content: center; align-items: center; margin: 40px; align-self: center; text-align: center;">
         <button class="meet_the_team">
-          <a href="https://forms.gle/Q9bLVLr3GfDAHjAs6">Meet the Team </a>
+          <a href="https://forms.gle/Q9bLVLr3GfDAHjAs6">Meet the Team</a>
         </button>
       </section>
-
+      
       <section class="contact-section" id="contact">
         <div>
-          <h1 style="font-size: 44px;font-family:GeneralSans-Medium;">We’d love to hear from you!</h1>
-          <p
-            style="
-              text-align: center;
-              font-size: 20px;
-              font-family: GeneralSans-Medium;
-            ">
-            Do you have questions or want to connect with us? <br />
-            Our team is eager to provide answers and engage with you.
-          </p>
+          <h1 style="font-size: 44px; font-family: GeneralSans-Medium;">We’d love to hear from you!</h1>
+          <p style="font-size: 20px; font-family: GeneralSans-Medium;">Do you have questions or want to connect with us?<br />Our team is eager to provide answers and engage with you.</p>
           <button class="contact-email_button">
             <a href="mailto:info@masooda.co">Send us an Email</a>
           </button>
