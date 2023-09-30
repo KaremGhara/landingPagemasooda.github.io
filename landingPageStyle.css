@@ -483,16 +483,46 @@ margin-right: 20px;
       z-index: 1;
         order: -1; /* This will make the image go above the text on small screens */
     }
-    .top-section{
+    .top-section {
       text-align: center;
-      height: 1100px;
+      height: auto; /* Adjust the height as needed */
+      width: 100%; /* Adjust the width as needed */
+      padding: 20px; /* Add some padding to center content */
+      box-sizing: border-box; /* Include padding in width/height calculation */
+    }
+  
+    .top-section .col-6 {
+      text-align: center;
+      width: 100%; /* Full width for the columns */
+    }
+ 
+    .top-section h1 {
+      font-size: 30px; /* Adjust the font size as needed */
+    }
+  
+    .top-section p {
+      font-size: 16px; /* Adjust the font size as needed */
+      font-weight: normal; /* Remove bold weight if not needed */
     }
     .mobile-image {
-      z-index: 1;
-      max-width: 50%;
-      width: 200%;
-      height: auto;
-      margin: 20px;
+      max-width: 100%; /* Adjust the max-width to fit the container */
+      width: auto; /* Let the image scale proportionally */
+      margin-left: 0; /* Remove left margin */
+      margin-top: 20px; /* Adjust top margin as needed */
+    }
+    section.center-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 40px auto; /* Adjust the margin as needed */
+      text-align: center;
+    }
+  
+  .features-header {
+    text-align: center;
+    margin: 0 auto; /* This centers the element horizontally */
+    max-width: 100%; /* Ensures the text does not exceed the screen width */
+    padding: 0 20px; /* Add some padding to prevent stretching on smaller screens */
   }
   .contact-section_nav-links{
     display: none;
@@ -513,14 +543,19 @@ margin-right: 20px;
   .contact-section_nav-links{
     width: 100%;
   }
-  .meet_the_team{
-    width: 500px !important;
-  }
-  .about-us-section_description span{
-    margin-left: 100px;
-  }
-
+  .meet_the_team {
+    display: block;
+    text-align: center;
+    margin: 0 auto 0 30px; /* Adds right margin */
+    width: 200px;
 }
+  .about-us-section_description {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
 
 .mobile-image {
   max-width: 100%; /* Ensures image doesn't overflow the container */
@@ -529,4 +564,4 @@ margin-right: 20px;
 .features-description-block_feature{
   text-align: left;
 }
-
+}
