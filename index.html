@@ -14,12 +14,14 @@
       type="text/css"
       media="screen"
       href="landingPageStyle.css" />
+      
+
   </head>
   <body>
-    <nav class="top-nav">
-      <div class="top-nav-left-section">
-        <div class="brand"><img src="assets/images//masoodalogored 1.png" width="250px" alt=""></div>
-        <ul class="top-nav-links">
+    <nav class="top-nav container-fluid">
+      <div class="top-nav row-left-section">
+        <div class="brand top-nav-left-section col-sm-6"><img src="assets/images//masoodalogored 1.png" width="250px" alt=""></div>
+        <ul class="top-nav-links top-nav-right-section col-sm-6">
           <li><a href="#" class="top-nav_links-text">About Us</a></li>
           <li><a href="#" class="top-nav_links-text">Features</a></li>
           <li><a href="#" class="top-nav_links-text">Contact</a></li>
@@ -39,56 +41,49 @@
       </div>
     </nav>
 
-    <main class="main-container">
-      <section class="top-section">
-        <div style="flex: 1; margin-left: 350px; flex-wrap: wrap">
-          <h1 class="top-header">
-            Empowering Restaurants,<br /> Eliminating Food Waste
-          
-            
-          </h1>
-          <p class="top-header_description">
-            At Masooda, we're on a mission to transform the restaurant industry <br />
-            Our tailored ERP software system is designed to be your restaurant's <br />
-            ultimate partner for success and sustainability.<br />
-            <br />
-            Masooda, you gain real-time visibility into inventory levels,<br /> optimize food ordering like never before, and simplify meal planning<br /> with ease.
-          </p>
-          <button class="waitlist-link_button">
-            <a href="https://forms.gle/Q9bLVLr3GfDAHjAs6">Join the waitlist</a>
-          </button>
-        </div>
-        <div style="margin-right: 350px;">
-          <img
-            src="assets/images/app2.png"
-            alt=""
-            style="margin-right: 500;width: 120%;" />
-        </div>
-      </section>
+    <main class="main-container container-fluid">
+      <section class="top-section row flex-row flex-wrap align-items-center">
+        <div class="col-6" id="intro">
+            <h1 class="top-header">Empowering Restaurants,<br /> Eliminating Food Waste</h1>
+            <p class="top-header_description">
+              At Masooda, we're on a mission to transform the restaurant industry <br />
+              Our tailored ERP software system is designed to be your restaurant's <br />
+              ultimate partner for success and sustainability.<br />
+              <br />
+              Masooda, you gain real-time visibility into inventory levels,<br /> optimize food ordering like never before, and simplify meal planning<br /> with ease.
+            </p>
+            <button class="waitlist-link_button">
+              <a href="https://forms.gle/Q9bLVLr3GfDAHjAs6" class="waitlist-link_button btn btn-primary">
+                Join the waitlist
+            </a>
 
-      <section class="features-section" id="features">
+            </button>
+        
+        </div>
+        <div class="col-6 text-center">
+            <img src="assets/images/app2.png" alt="" class="img-fluid mobile-image" />
+        </div>
+    </section>
+    
+
+      <section class="features-section row" id="features">
         <h1 class="features-header">
-          We're not just a solution;<br /> we're your ally in reducing food waste,<br />
-          enhancing operational efficiency, and creating a dining experience<br />
+          We're not just a solution; we're your ally in reducing food waste,
+          enhancing operational efficiency, and creating a dining experience
           that's both <span style="color: #B21313;">profitable</span> and <span style="color: #B21313;">planet-friendly</span>.
         </h1>
         
-        <div class="features-description-block">
-          <div class="features-description-block_feature">
-            <img
-              src="./assets/landingpage-icons/inventory-icon.png"
-              alt="inventory-icon" />
+        <div class="features-description-block row">
+          <div class="features-description-block_feature col-12 col-md-6 col-lg-3">
+            <img src="./assets/landingpage-icons/inventory-icon.png" alt="inventory-icon" />
             <h3>Inventory Management</h3>
             <p>
-              Masooda provides tools <br />
-              to easily track and manage <br />
-              restaurant's food inventory <br />
-              with real-time updates, helping <br />
-              to reduce waste and maximize <br />
-              profitability.
+              Masooda provides tools to easily track and manage
+              restaurant's food inventory with real-time updates, helping
+              to reduce waste and maximize profitability.
             </p>
           </div>
-          <div class="features-description-block_feature">
+          <div class="features-description-block_feature col-12 col-md-6 col-lg-3">
             <img
               src="./assets/landingpage-icons/mealplans-icon.png"
               alt="mealplans-icon" />
@@ -101,7 +96,7 @@
               restaurant's success.
             </p>
           </div>
-          <div class="features-description-block_feature">
+          <div class="features-description-block_feature col-12 col-md-6 col-lg-3">
             <img
               src="./assets/landingpage-icons/recipe-icon.png"
               alt="recipe-icon" />
@@ -115,7 +110,7 @@
               consistent.
             </p>
           </div>
-          <div class="features-description-block_feature">
+          <div class="features-description-block_feature col-12 col-md-6 col-lg-3">
             <img
               src="./assets//landingpage-icons/finance-icon.png"
               alt="finance-icon" />
