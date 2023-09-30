@@ -647,7 +647,7 @@ margin-right: 20px;
       align-self: center;
       text-align: center;
       height: auto; /* Adjust the height as needed */
-      width: 130%; /* Adjust the width as needed */
+      width: 135%; /* Adjust the width as needed */
       padding: 20px; /* Add some padding to center content */
       box-sizing: border-box; /* Include padding in width/height calculation */
     }
@@ -700,7 +700,7 @@ margin-right: 20px;
     text-align: center;
   }
   .join-section{
-    width: 130%;
+    width: 135%;
     text-align: center;
     font-size: 13px;
   }
