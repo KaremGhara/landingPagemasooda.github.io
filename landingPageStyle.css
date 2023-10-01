@@ -273,7 +273,7 @@ hr {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 650px;
+  width: 670px;
 
 }
 
@@ -520,14 +520,16 @@ margin-right: 20px;
 @media only screen and (min-width: 335px) and (max-width:1000px) {
   #about-us-div h1{
     /* margin-right: 50px; */
-    font-size: 30px !important;
+    font-size: 26px !important;
     padding-left: 0 !important;
+    margin-left: 227px !important;
+    
 
   }
 
   #about-us-div .about-us-section_description{
     padding-left: 0 !important;
-
+    margin-left: 110px !important;
     /* margin-right: 200px !important ; */
     font-size: 22px !important;
     /* padding-right: 120px !important; */
@@ -540,7 +542,7 @@ margin-right: 20px;
     text-align: center;
   }
   #about-us-right p{
-    margin-left: 70px !important;
+    margin-left: 139px !important;
     font-size: 20px !important;
   }
 
@@ -559,6 +561,7 @@ margin-right: 20px;
   }
 
   .meet_the_team {
+    margin-left: 200px !important;
     font-size: 16px; /* Adjust button font size for smaller screens */
   }
   .top-header_description {
@@ -567,7 +570,7 @@ margin-right: 20px;
     margin: 0 auto;
 }
   .menu-toggle {
-    margin-left: 290px;
+    margin-left: 400px;
     cursor: pointer;
   }
   
@@ -671,7 +674,7 @@ margin-right: 20px;
       align-self: center;
       text-align: center;
       height: auto; /* Adjust the height as needed */
-      width: 135%; /* Adjust the width as needed */
+      width: 670px; /* Adjust the width as needed */
       padding: 20px; /* Add some padding to center content */
       box-sizing: border-box; /* Include padding in width/height calculation */
     }
@@ -732,7 +735,7 @@ margin-right: 20px;
     text-align: center;
   }
   .join-section{
-    width: 135%;
+    width: 670px; /* Adjust the width as needed */
     text-align: center;
     font-size: 13px;
   }
@@ -743,7 +746,7 @@ margin-right: 20px;
     margin-top: 100px;
   }
   .contact-section_nav-links{
-    width: 100%;
+    width: 670px;
   }
   .meet_the_team {
     display: block;
@@ -800,7 +803,7 @@ h1 {
 p {
   text-align: center;
   margin-right: 20px;
-  font-size: 14px !important;
+  font-size: 20px !important;
   margin: 30px !important;
 }
 
